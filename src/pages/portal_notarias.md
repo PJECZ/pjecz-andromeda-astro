@@ -3,7 +3,7 @@ layout: ../layouts/MarkdownLayout.astro
 title: Portal de Notarías
 ---
 
-## Portal Notarías
+## Portal de Notarías
 
 El Portal de Notarías es una plataforma que permite a las notarías publicar sus Edictos en el sitio web del Poder Judicial del Estado de Coahuila de Zaragoza.
 
