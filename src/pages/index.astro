@@ -1,6 +1,59 @@
 ---
-import BoxPlatform from "../components/BoxPlatform.astro";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import LinkDocumentation from "../components/LinkDocumentation.astro";
+import LinkPlatform from "../components/LinkPlatform.astro";
+
+import iconoPlataformaWeb from "../assets/img/icono-plataforma-web.png";
+import iconoSistemaCitas from "../assets/img/icono-sistema-citas.png";
+import iconoPortalNotarias from "../assets/img/icono-portal-notarias.png";
+import iconoTramitesServicios from "../assets/img/icono-tramites-servicios.png";
+import iconoPlataformaArchivoJudicial from "../assets/img/icono-plataforma-archivo-judicial.png";
+import iconoPlataformaOrion from "../assets/img/icono-plataforma-orion.png";
+
+const plataformas = [
+  {
+    title: "Plataforma Web",
+    icono: iconoPlataformaWeb,
+    description: "Gestión de la información interna y externa, como descargar recibos de nómina y crear tickets de soporte técnico.",
+    url: "https://plataforma-web.justiciadigital.gob.mx/",
+    docs: "/plataforma_web"
+  },
+  {
+    title: "Sistema de Citas",
+    icono: iconoSistemaCitas,
+    description: "Agendar citas en las oficinas y juzgados del Poder Judicial.",
+    url: "https://citas.justiciadigital.gob.mx/",
+    docs: "/sistema_citas"
+  },
+  {
+    title: "Portal de Notarías",
+    icono: iconoPortalNotarias,
+    description: "Gestión de la publicación de edictos, por parte de las Notarías, en el sitio web.",
+    url: "https://notarias.justiciadigital.gob.mx/",
+    docs: "/portal_notarias"
+  },
+  {
+    title: "Trámites y Servicios",
+    icono: iconoTramitesServicios,
+    description: "Realizar el pago de los trámites y servicios por banca electrónica.",
+    url: "https://www.pjecz.gob.mx/tramites-y-servicios/",
+    docs: "https://www.pjecz.gob.mx/tramites-y-servicios/"
+  },
+  {
+    title: "Plataforma del Archivo Judicial",
+    icono: iconoPlataformaArchivoJudicial,
+    description: "Consulta de documentos y entrega de remesas al Archivo Judicial General.",
+    url: "https://archivo-judicial-general.justiciadigital.gob.mx/",
+    docs: "/plataforma_archivo_judicial_general"
+  },
+  {
+    title: "Plataforma Orión",
+    icono: iconoPlataformaOrion,
+    description: "Administración de los expedientes del personal.",
+    url: "https://orion.justiciadigital.gob.mx/",
+    docs: "/plataforma_orion"
+  }
+];
 ---
 
 <DefaultLayout>
@@ -23,50 +76,16 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
         alentamos y promovemos la innovación. Gracias a las herramientas digitales
         hoy la justicia es más accesible a la ciudadanía.
       </p>
-      <h2 class="text-2xl font-bold">Acceso a las Plataformas</h2>
-      <div class="flex flex-col sm:flex-row gap-2 mt-4">
-        <a href="https://plataforma-web.justiciadigital.gob.mx/" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition">Plataforma Web</a>
-        <a href="https://citas.justiciadigital.gob.mx/" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition">Sistema de Citas</a>
-        <a href="https://notarias.justiciadigital.gob.mx/" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition">Portal de Notarías</a>
-        <a href="https://www.pjecz.gob.mx/tramites-y-servicios/" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition">Trámites y Servicios</a>
-        <a href="https://archivo-judicial-general.justiciadigital.gob.mx/" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition">Plataforma del Archivo Judicial</a>
-        <a href="https://orion.justiciadigital.gob.mx/" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition">Plataforma Orión</a>
+      <h2 class="text-2xl font-bold mb-2">Accesos a las Plataformas</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        { plataformas.map((plataforma) => <LinkPlatform title={plataforma.title} icon={plataforma.icono} url={plataforma.url} />) }
       </div>
     </div>
   </section>
   <section class="bg-gray-200 text-black dark:bg-gray-700 dark:text-gray-200 py-24 px-4 md:px-8 lg:px-12" id="plataformas">
     <h1 class="text-gray-900 dark:text-white text-3xl font-bold pt-0 mb-6">Documentación de las Plataformas</h1>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <BoxPlatform
-        title="Plataforma Web"
-        description="Gestión de la información interna y externa, como descargar recibos de nómina y crear tickets de soporte técnico."
-        url="/plataforma_web"
-      />
-      <BoxPlatform
-        title="Sistema de Citas"
-        description="Agendar citas en las oficinas y juzgados del Poder Judicial."
-        url="/sistema_citas"
-      />
-      <BoxPlatform
-        title="Portal de Notarías"
-        description="Gestión de la publicación de edictos, por parte de las Notarías, en el sitio web."
-        url="/portal_notarias"
-      />
-      <BoxPlatform
-      title="Trámites y Servicios"
-      description="Realizar el pago de los trámites y servicios por banca electrónica."
-      url="https://www.pjecz.gob.mx/tramites-y-servicios/"
-      />
-      <BoxPlatform
-        title="Plataforma del Archivo Judicial"
-        description="Consulta de documentos y entrega de remesas al Archivo Judicial General."
-        url="/plataforma_archivo_judicial_general"
-      />
-      <BoxPlatform
-        title="Plataforma Orión"
-        description="Administración de los expedientes del personal."
-        url="/plataforma_orion"
-      />
+      { plataformas.map((plataforma) => <LinkDocumentation title={plataforma.title} description={plataforma.description} docs={plataforma.docs} />) }
     </div>
   </section>
   <section class="hero py-24 px-4 md:px-8 lg:px-12" id="datos-abiertos">
@@ -88,4 +107,3 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
     </div>
   </section>
 </DefaultLayout>
-

@@ -1,43 +1,103 @@
-# Astro Starter Kit: Minimal
+# PJECZ Andromeda Astro
 
-```sh
-npm create astro@latest -- --template minimal
+Sitio web [justiciadigital.gob.mx](https://justiciadigital.gob.mx/) donde se documentan las plataformas del [Poder Judicial del Estado de Coahuila de Zaragoza](https://www.pjecz.gob.mx/).
+
+## Desarrollar
+
+Requiere [NodeJS](https://nodejs.org/) versión 22.
+
+Clonar el repositorio
+
+```bash
+git clone https://github.com/PJECZ/pjecz-andromeda-astro.git
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Instalar
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm install
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Arrancar el servicio web en desarrollo
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+npm run dev
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Inicializar
 
-## 🧞 Commands
+A continuación se describen los pasos para instalar [Astro](https://astro.build/) y los paquetes que se usan en este sitio web.
 
-All commands are run from the root of the project, from a terminal:
+Crear un nuevo sitio web con Astro
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```bash
+npm create astro@latest
+```
 
-## 👀 Want to learn more?
+El asistente le preguntará el nombre del directorio, que para este proyecto es `pjecz-andromeda-astro`
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Ir al directorio creado
+
+```bash
+cd pjecz-andromeda-astro
+```
+
+Instalar [Tailwind](https://docs.astro.build/en/guides/styling/#tailwind) como framework de diseño
+
+```bash
+npx astro add tailwind
+```
+
+Instalar [MDX](https://docs.astro.build/en/guides/integrations-guide/mdx/) para tener sintaxis de markdown extendida
+
+```bash
+npx astro add mdx
+```
+
+Instalar [Partytown](https://partytown.qwik.dev/astro/) para correr scripts de terceros en pilas
+
+```bash
+npx astro add partytown
+```
+
+Instalar [Material Design Icons](https://www.astroicon.dev/guides/customization/)
+
+```bash
+npx astro add astro-icon
+```
+
+Y el paquete con iconos
+
+```bash
+npm install @iconify-json/mdi
+```
+
+Instalar [Astro Compress](https://www.npmjs.com/package/astro-compress)
+
+```bash
+npx astro add astro-compress
+```
+
+Instalar [Tailwind Typography](https://www.npmjs.com/package/@tailwindcss/typography) para que los archivos markdown reciban su estilo
+
+```bash
+npm install @tailwindcss/typography
+```
+
+Instalar [Astro NavBar](https://github.com/surjithctly/astro-navbar) para tener un menu responsivo de tres barras
+
+```bash
+npm install astro-navbar
+```
+
+Instalar [sharp](https://sharp.pixelplumbing.com/) necesario para procesar las imágenes
+
+```bash
+npm install sharp
+```
+
+Arrancar el servicio web para desarrollo
+
+```bash
+npm run dev
+```
