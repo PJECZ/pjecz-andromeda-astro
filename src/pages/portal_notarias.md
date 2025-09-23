@@ -27,7 +27,7 @@ Los edictos son comunicaciones oficiales públicas cuyo objetivo es promulgar un
         - Elija **Microsoft** si su correo electrónico es de Hotmail, Outlook o Live.
         - Elija **GitHub** si tiene cuenta en esta plataforma.
 
-        ![¿Cómo ingreso al Portal de Notarías?](../assets/img/portal_notarias/edictos/login-logo-nuevo.png)
+        ![¿Cómo ingreso al Portal de Notarías?](../assets/img/portal_notarias/edictos/login.png)
 
     - Se abrirá una ventana emergente donde deberá ingresar su correo electrónico y contraseña, o bien confirmar si confía en esta plataforma.
     - Si el correo electrónico no está registrado, no podrá ingresar al portal.

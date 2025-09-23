@@ -11,7 +11,7 @@ Los edictos son comunicaciones oficiales públicas cuyo objetivo es promulgar un
 
 Ingrese al Portal de Notarías con la cuenta de correo electrónico proporcionada. La página de inicio se muestra así:
 
-![De clic en Edictos](../../assets/img/portal_notarias/edictos/bienvenida.png)
+![De clic en Edictos](../../assets/img/portal_notarias/edictos/inicio.png)
 
 Haga clic en el módulo **Edictos**. Se mostrará un listado con los edictos en orden cronológico inverso.
 
