@@ -29,6 +29,6 @@ Los edictos son comunicaciones oficiales públicas cuyo objetivo es promulgar un
 
         ![¿Cómo ingreso al Portal de Notarías?](../assets/img/portal_notarias/edictos/login.png)
 
-    - Quizá que se le muestre una ventana emergente donde confirme si confía en esta plataforma.
+    - Puede que se le muestre una ventana emergente donde confirme si confía en esta plataforma.
     - Una vez validado el inicio de sesión, se mostrará un botón para acceder.
     - Le recomendamos cerrar la sesión y salir de la plataforma al finalizar su trabajo.
