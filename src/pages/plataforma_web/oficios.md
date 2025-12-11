@@ -21,3 +21,19 @@ De clic en **Oficios** en el menú principal, le mostrará **Mi Bandeja de entra
 ![Mi Bandeja de Entrada](../../assets/img/plataforma_web/oficios/mi-bandeja-de-entrada.png)
 
 Puede usar el buscador del listado para escribir en éste parte del folio, la clave de la autoridad, parte de la descripción o elegir el estado, y dar clic en la **lupa** para filtrar sus resultados. De clic en la **escoba** para limpiar los campos.
+
+De clic en el primer icono de la columna **Ver** para abrir el oficio a pantalla completa, o en el segundo icono para abrir el detalle en pantalla pequeña.
+
+
+## Detalle para Pantalla Completa
+
+Verá la versión digital del oficio con su encabezado, su cuerpo y su pie de página. Del lado derecho superior aparecerán el listado de los archivos adjuntos y del lado derecho inferior el listado de los destinatarios (en azul si no lo ha visto y en verde si ya lo vio).
+
+![Detalle para Pantalla Completa](../../assets/img/plataforma_web/oficios/detalle-pantalla-completa.png)
+
+
+## Detalle para Pantalla Pequeña
+
+La vista para pantalla pequeña es ideal para teléfonos inteligentes con orientación vertical. El primer cuadro tiene los datos generales y las cadenas de validación, tanto la guardada como la que se genera al momento de abrir, si fuesen diferentes significaría que el contenido ha sido cambiado después de la firma electrónica. El segundo cuadro tiene el cuerpo del oficio, seguido por las listas de los destinatarios y de los archivos adjuntos.
+
+![Detalle para Pantalla Pequeña](../../assets/img/plataforma_web/oficios/detalle-pantalla-pequena.png)
