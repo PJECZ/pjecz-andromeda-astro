@@ -115,5 +115,4 @@ Pasos para cancelar una cita:
 3. Dar clic en el botón **CANCELAR**.
 4. Confirmar la cancelación dando clic en el botón **CONFIRMAR**.
 
-IMAGEN CANCELAR LA CITA
 ![Cancelar cita](../assets/img/sistema_citas/confirmar_cancelacion.png)
